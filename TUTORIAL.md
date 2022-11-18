@@ -1,0 +1,16 @@
+- [x] Boilerplate
+- [x] Sky
+- [x] Textures and images
+- [x] Ground
+- [x] Keyboard inputs
+- [x] Player
+- [x] First person view
+- [x] Gravity
+- [x] Movement
+- [x] State management
+- [x] Cubes
+- STOPPED AT 57:53 (https://www.youtube.com/watch?v=qpOZup_3P_A&ab_channel=freeCodeCamp.org)
+- [] Adding and removing cubs
+- [] Cube type selector
+- [] Save world in localstorage
+- [] Build a house
