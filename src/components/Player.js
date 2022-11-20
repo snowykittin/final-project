@@ -57,7 +57,7 @@ export const Player = () => {
         api.velocity.set(direction.x, vel.current[1], direction.z)
         
         //if space is hit, jump
-        if(jump && Math.abs(vel.current[1] < 0.001)){
+        if(jump && Math.abs(vel.current[1] < 0.00005)){
             api.velocity.set(pos.current[0], JUMP_FORCE, pos.current[2])
         }
     })

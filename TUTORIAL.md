@@ -9,8 +9,8 @@
 - [x] Movement
 - [x] State management
 - [x] Cubes
-- STOPPED AT 57:53 (https://www.youtube.com/watch?v=qpOZup_3P_A&ab_channel=freeCodeCamp.org)
-- [] Adding and removing cubs
+- [x] Adding and removing cubes
+- (https://youtu.be/qpOZup_3P_A?t=4170)
 - [] Cube type selector
 - [] Save world in localstorage
 - [] Build a house
