@@ -2,15 +2,14 @@ import React, {useState, useEffect} from "react"
 
 export const HelpMenu = () => {
     const [isActive, setActive] = useState(false);
+    const toggleActive = () => {
+        setActive(!isActive)
+    }
   
     useEffect(() => {
         const handleEsc = (event) => {
            if (event.keyCode === 72) {
-            if(isActive){
-                setActive(false)
-            }else{
-                setActive(true)
-            }
+            toggleActive()
           }
         };
         window.addEventListener('keydown', handleEsc);
