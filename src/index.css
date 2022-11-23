@@ -58,6 +58,12 @@ body {
   top: 5px;
   right: 5px;
 }
+.hide{
+  display: none;
+}
+.visible{
+  display: block;
+}
 .help h2{
   font-size: 16px;
 }

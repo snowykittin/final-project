@@ -5,7 +5,7 @@ import { Ground } from './components/Ground';
 import { Player } from './components/Player';
 import { FPV } from './components/FPV';
 import { Cubes } from './components/Cubes'
-import HelpMenu from "./components/HelpMenu"
+import { HelpMenu } from "./components/HelpMenu"
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         </Physics>
       </Canvas>
       <div className='absolute centered cursor'>+</div>
-      <div className='help visible'>
-        <h2>Press Esc for Controls</h2>
+      <div className='help'>
+        <h2>Press [H] for Controls</h2>
         <HelpMenu />
       </div>
     </>
