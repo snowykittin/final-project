@@ -14,3 +14,10 @@
 - [] Cube type selector
 - [] Save world in localstorage
 - [] Build a house
+
+---
+
+- [] Toggle controls
+- [] Permanent cube selector
+- [] Even more cubes
+- [] Fix offset of cursor

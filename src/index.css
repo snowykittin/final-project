@@ -52,3 +52,16 @@ body {
 .cursor{
   color: white;
 }
+
+.help{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.help h2{
+  font-size: 16px;
+}
+.help .keys{
+  font-size: 12px;
+  text-align: justify;
+}
