@@ -8,6 +8,7 @@ export const Cubes = () => {
     
     //console.log(cubes)
     return cubes.map(({key, pos, texture}) => {
+        /* Returning a Cube component with the key, position, and texture props. */
         return (
             <Cube key={key} position={pos} texture={texture} />
         )

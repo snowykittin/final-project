@@ -7,15 +7,21 @@ export const Cube = ({position, texture}) => {
         type: 'Static',
         position
     }))
+    //get the texture for adding/removing blocks
     const activeTexture = textures[texture + 'Texture']
+    //grab the const from useStore for removing and adding cubes
     const[addCube, removeCube] = useStore((state) => [state.addCube, state.removeCube])
 
     return (
         <mesh 
             onClick={(e) => {
                 e.stopPropagation()
+                //figure out which face of the cube is clicked
                 const clickedFace = Math.floor(e.faceIndex / 2)
+                //get the x y z of a click
                 const {x,y,z} = ref.current.position;
+
+                //if shift, then remove the cube
                 if(e.shiftKey){
                     removeCube(x,y,z)
                     return

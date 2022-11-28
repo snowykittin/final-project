@@ -19,6 +19,7 @@ groundTexture.magFilter = NearestFilter
 groundTexture.wrapS = RepeatWrapping
 groundTexture.wrapT = RepeatWrapping
 
+//export all textures for use
 export{
     dirtTexture, logTexture, grassTexture, glassTexture, woodTexture, groundTexture
 }

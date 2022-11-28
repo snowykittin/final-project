@@ -7,20 +7,24 @@ export const HelpMenu = () => {
     }
   
     useEffect(() => {
-        const handleEsc = (event) => {
+        /*
+         * When H is pressed, toggle the active state
+         */
+        const handleH = (event) => {
            if (event.keyCode === 72) {
             toggleActive()
           }
         };
-        window.addEventListener('keydown', handleEsc);
+        window.addEventListener('keydown', handleH);
     
         return () => {
-          window.removeEventListener('keydown', handleEsc);
+          window.removeEventListener('keydown', handleH);
         };
         // eslint-disable-next-line 
       }, []);
 
     return(
+        //check if the class is active or not, set classes accordingly
         <div className={isActive ? "keys visible" : "hide"}>
             <p>[W], [A], [S], [D] : Move</p>
             <p>[Space] : Jump</p>
