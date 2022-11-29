@@ -1,19 +1,21 @@
 import { NearestFilter, RepeatWrapping, TextureLoader } from 'three'
-import { dirtImg, logImg, grassImg, glassImg, woodImg } from './images'
+//import ALL textures to make life easy 
+import * as TEXTURE from './images'
 
 //Create textures from images imported in
-const dirtTexture = new TextureLoader().load(dirtImg)
-const logTexture = new TextureLoader().load(logImg)
-const grassTexture = new TextureLoader().load(grassImg)
-const glassTexture = new TextureLoader().load(glassImg)
-const woodTexture = new TextureLoader().load(woodImg)
-const groundTexture = new TextureLoader().load(grassImg)
+const dirtTexture = new TextureLoader().load(TEXTURE.dirtImg)
+const grassTexture = new TextureLoader().load(TEXTURE.grassImg)
+const glassTexture = new TextureLoader().load(TEXTURE.glassImg)
+const groundTexture = new TextureLoader().load(TEXTURE.grassImg)
+
+const oakLogTexture = new TextureLoader().load(TEXTURE.oakLogImg)
+const oakWoodTexture = new TextureLoader().load(TEXTURE.oakPlankImg)
 
 dirtTexture.magFilter = NearestFilter;
-logTexture.magFilter = NearestFilter;
+oakLogTexture.magFilter = NearestFilter;
 grassTexture.magFilter = NearestFilter;
 glassTexture.magFilter = NearestFilter;
-woodTexture.magFilter = NearestFilter;
+oakWoodTexture.magFilter = NearestFilter;
 //let ground repeat without smearing
 groundTexture.magFilter = NearestFilter
 groundTexture.wrapS = RepeatWrapping
@@ -21,5 +23,5 @@ groundTexture.wrapT = RepeatWrapping
 
 //export all textures for use
 export{
-    dirtTexture, logTexture, grassTexture, glassTexture, woodTexture, groundTexture
+    dirtTexture, oakLogTexture, grassTexture, glassTexture, oakWoodTexture, groundTexture
 }
