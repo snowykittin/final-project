@@ -14,8 +14,8 @@ import jungleLogImg from './jungle_log.png'
 import oakPlankImg from './oak_planks.png';
 import birchPlankImg from './birch_planks.png';
 import acaciaPlankImg from './acacia_planks.png';
-import sprucePlanksImg from './spruce_planks.png';
-import junglePlanksImg from './jungle_planks.png'
+import sprucePlankImg from './spruce_planks.png';
+import junglePlankImg from './jungle_planks.png'
 
 
 export {
@@ -29,8 +29,8 @@ export {
 	acaciaLogImg,
 	acaciaPlankImg,
 	spruceLogImg,
-	sprucePlanksImg,
+	sprucePlankImg,
 	jungleLogImg,
-	junglePlanksImg
+	junglePlankImg
 
 }
