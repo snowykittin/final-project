@@ -17,7 +17,7 @@
 
 ---
 
-- [] Toggle controls
+- [/] Toggle controls
 - [] Permanent cube selector
-- [] Even more cubes
+- [x] Even more cubes
 - [] Fix offset of cursor

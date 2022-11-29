@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react"
 export const HelpMenu = () => {
     const [isActive, setActive] = useState(false);
     const toggleActive = () => {
-        setActive(!isActive)
+        setActive((prevValue) => !prevValue)
     }
   
     useEffect(() => {
