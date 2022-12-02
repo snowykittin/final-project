@@ -8,15 +8,17 @@ const images = {
     grass: BLOCKS.grassImg,
     glass: BLOCKS.glassImg,
     oakWood: BLOCKS.oakPlankImg,
-    oakLog: BLOCKS.oakLogImg
+    oakLog: BLOCKS.oakLogImg,
+    birchWood: BLOCKS.birchPlankImg,
+    birchLog: BLOCKS.birchLogImg
 }
 
 export const TextureSelector = () => {
     //determine visibility
     const [visible, setVisible] = useState(false)
     const [activeTexture, setTexture] = useStore((state) => [state.texture, state.setTexture])
-    const {dirt,glass,grass,oakWood,oakLog} = useKeyboard()
-    const textures = {dirt,glass,grass,oakWood,oakLog}
+    const {dirt,glass,grass,oakWood,oakLog,birchWood,birchLog} = useKeyboard()
+    const textures = {dirt,glass,grass,oakWood,oakLog,birchWood,birchLog}
 
     useEffect(() => {
         const pressedTexture = Object.entries(textures).find(([k,v]) => v)
@@ -25,7 +27,7 @@ export const TextureSelector = () => {
         }
 
         // eslint-disable-next-line
-    }, [setTexture, dirt,glass,grass,oakWood,oakLog])
+    }, [setTexture, dirt,glass,grass,oakWood,oakLog,birchWood,birchLog])
 
     useEffect(() => {
         //if active texture changes, make the selector visible
