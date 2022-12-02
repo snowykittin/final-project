@@ -75,7 +75,7 @@ body {
 .help{
   position: absolute;
   top: 5px;
-  right: 15px;
+  right: 30px;
 }
 .hide{
   display: none;
@@ -88,11 +88,14 @@ body {
 }
 .help .keys{
   font-size: 12px;
-  text-align: justify;
 }
 
 .selector{
-  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 650px;
+  min-height: 100px;
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -101,9 +104,10 @@ body {
   border: 5px solid grey;
 }
 .selector img{
-  width: 100px;
-  margin: 5px 10px;
+  width: 60px;
+  height: 60px;
+  margin: 5px 0px;
 }
 .selector img.active{
-  border: 3px solid rgb(65, 65, 65);
+  border: 3px solid rgb(0, 139, 182);
 }

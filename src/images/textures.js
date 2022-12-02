@@ -24,7 +24,6 @@ Textures.texture.forEach(t => {
 console.log(arrTexture)
 
 const dirtTexture = new TextureLoader().load(TEXTURE.dirtImg)
-const grassTexture = new TextureLoader().load(TEXTURE.grassImg)
 const glassTexture = new TextureLoader().load(TEXTURE.glassImg)
 const groundTexture = new TextureLoader().load(TEXTURE.grassImg)
 
@@ -40,9 +39,20 @@ const spruceWoodTexture = new TextureLoader().load(TEXTURE.sprucePlankImg)
 const jungleLogTexture = new TextureLoader().load(TEXTURE.jungleLogImg)
 const jungleWoodTexture = new TextureLoader().load(TEXTURE.junglePlankImg)
 
+//load wool textures
+const blackWoolTexture = new TextureLoader().load(TEXTURE.blackWoolImg)
+const whiteWoolTexture = new TextureLoader().load(TEXTURE.whiteWoolImg)
+const greyWoolTexture = new TextureLoader().load(TEXTURE.greyWoolImg)
+const redWoolTexture = new TextureLoader().load(TEXTURE.redWoolImg)
+const yellowWoolTexture = new TextureLoader().load(TEXTURE.yellowWoolImg)
+const orangeWoolTexture = new TextureLoader().load(TEXTURE.orangeWoolImg)
+const greenWoolTexture = new TextureLoader().load(TEXTURE.greenWoolImg)
+const blueWoolTexture = new TextureLoader().load(TEXTURE.blueWoolImg)
+const purpleWoolTexture = new TextureLoader().load(TEXTURE.purpleWoolImg)
+const pinkWoolTexture = new TextureLoader().load(TEXTURE.pinkWoolImg)
+
 //remove smearing
 dirtTexture.magFilter = NearestFilter;
-grassTexture.magFilter = NearestFilter;
 glassTexture.magFilter = NearestFilter;
 
 //remove smearing of wood
@@ -57,6 +67,18 @@ spruceWoodTexture.magFilter = NearestFilter;
 jungleLogTexture.magFilter = NearestFilter;
 jungleWoodTexture.magFilter = NearestFilter;
 
+//remove smearing of wool
+blackWoolTexture.magFilter = NearestFilter;
+whiteWoolTexture.magFilter = NearestFilter;
+greyWoolTexture.magFilter = NearestFilter;
+redWoolTexture.magFilter = NearestFilter;
+yellowWoolTexture.magFilter = NearestFilter;
+greenWoolTexture.magFilter = NearestFilter;
+orangeWoolTexture.magFilter = NearestFilter;
+blueWoolTexture.magFilter = NearestFilter;
+purpleWoolTexture.magFilter = NearestFilter;
+pinkWoolTexture.magFilter = NearestFilter;
+
 
 //let ground repeat without smearing
 groundTexture.magFilter = NearestFilter
@@ -65,8 +87,8 @@ groundTexture.wrapT = RepeatWrapping
 
 //export all textures for use
 export{
-    dirtTexture, grassTexture, glassTexture, groundTexture,
+    dirtTexture, glassTexture, groundTexture,
     oakLogTexture, oakWoodTexture, birchLogTexture, birchWoodTexture,
     acaciaLogTexture, acaciaWoodTexture, spruceLogTexture, spruceWoodTexture,
-    jungleLogTexture, jungleWoodTexture
+    jungleLogTexture, jungleWoodTexture, blackWoolTexture, whiteWoolTexture, greyWoolTexture, redWoolTexture, yellowWoolTexture, orangeWoolTexture, greenWoolTexture, blueWoolTexture, purpleWoolTexture, pinkWoolTexture
 }

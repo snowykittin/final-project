@@ -5,20 +5,33 @@ import * as BLOCKS from '../images/images'
 
 const images = {
     dirt: BLOCKS.dirtImg,
-    grass: BLOCKS.grassImg,
     glass: BLOCKS.glassImg,
     oakWood: BLOCKS.oakPlankImg,
     oakLog: BLOCKS.oakLogImg,
     birchWood: BLOCKS.birchPlankImg,
-    birchLog: BLOCKS.birchLogImg
+    birchLog: BLOCKS.birchLogImg,
+    spruceWood: BLOCKS.sprucePlankImg,
+    spruceLog: BLOCKS.spruceLogImg,
+    jungleWood: BLOCKS.junglePlankImg,
+    jungleLog: BLOCKS.jungleLogImg,
+    blackWool: BLOCKS.blackWoolImg,
+    greyWool: BLOCKS.greyWoolImg,
+    whiteWool: BLOCKS.whiteWoolImg,
+    redWool: BLOCKS.redWoolImg,
+    yellowWool: BLOCKS.yellowWoolImg,
+    orangeWool: BLOCKS.orangeWoolImg,
+    greenWool: BLOCKS.greenWoolImg,
+    blueWool: BLOCKS.blueWoolImg,
+    purpleWool: BLOCKS.purpleWoolImg,
+    pinkWool: BLOCKS.pinkWoolImg,
 }
 
 export const TextureSelector = () => {
     //determine visibility
     const [visible, setVisible] = useState(false)
     const [activeTexture, setTexture] = useStore((state) => [state.texture, state.setTexture])
-    const {dirt,glass,grass,oakWood,oakLog,birchWood,birchLog} = useKeyboard()
-    const textures = {dirt,glass,grass,oakWood,oakLog,birchWood,birchLog}
+    const {dirt,glass,oakWood,oakLog,birchWood,birchLog,spruceWood,spruceLog,jungleWood,jungleLog,blackWool,greyWool,whiteWool,redWool,yellowWool,orangeWool,greenWool,blueWool,purpleWool,pinkWool} = useKeyboard()
+    const textures = {dirt,glass,oakWood,oakLog,birchWood,birchLog,spruceWood,spruceLog,jungleWood,jungleLog,blackWool,greyWool,whiteWool,redWool,yellowWool,orangeWool,greenWool,blueWool,purpleWool,pinkWool}
 
     useEffect(() => {
         const pressedTexture = Object.entries(textures).find(([k,v]) => v)
@@ -27,7 +40,7 @@ export const TextureSelector = () => {
         }
 
         // eslint-disable-next-line
-    }, [setTexture, dirt,glass,grass,oakWood,oakLog,birchWood,birchLog])
+    }, [setTexture, dirt,glass,oakWood,oakLog,birchWood,birchLog,spruceWood,spruceLog,jungleWood,jungleLog, blackWool,greyWool,whiteWool,redWool,yellowWool,orangeWool,greenWool,blueWool,purpleWool,pinkWool])
 
     useEffect(() => {
         //if active texture changes, make the selector visible

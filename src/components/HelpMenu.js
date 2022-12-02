@@ -31,6 +31,8 @@ export const HelpMenu = () => {
             <p>Hold [Space] : 'Fly'</p>
             <p>Click : Place Block</p>
             <p>[Shift] + Click : Remove Block</p>
+            <p>[1] → [0] : Select Block</p>
+            <p>[NUM 0] → [NUM 9] : Pick Wool</p>
         </div>
     )
 }
