@@ -56,7 +56,7 @@ body {
 .introControls{
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 15px;
 }
 .introControls h2{
   font-size: 16px;
@@ -66,13 +66,16 @@ body {
   font-style: italic;
 }
 .introControls .menu button{
-  margin-right: 5px;
+  margin-right: 10px;
+  border: 1px solid black;
+  background-color: lightgray;
+  color:rgb(65, 65, 65);
 }
 
 .help{
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 15px;
 }
 .hide{
   display: none;

@@ -2,6 +2,7 @@ import { useBox } from "@react-three/cannon"
 import { useState } from "react"
 import { useStore } from "../hooks/useStore"
 import * as textures from "../images/textures"
+// import { arrTexture } from "../images/textures"
 
 export const Cube = ({position, texture}) => {
     const [isHovered, setIsHovered] = useState(false)
@@ -11,6 +12,7 @@ export const Cube = ({position, texture}) => {
     }))
     //get the texture for adding/removing blocks
     const activeTexture = textures[texture + 'Texture']
+  
     //grab the const from useStore for removing and adding cubes
     const[addCube, removeCube] = useStore((state) => [state.addCube, state.removeCube])
 

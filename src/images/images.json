@@ -1,5 +1,5 @@
 {
-    "wood": [
+    "texture": [
         {   "name": "oakLog",
             "image": "./oak_log.png"},
         {   "name": "oakPlanks",
@@ -19,9 +19,7 @@
         {   "name": "jungleLog",
             "image": "./jungle_log.png"},
         {   "name": "junglePlanks",
-            "image": "./jungle_planks.png"}
-    ],
-    "wool": [
+            "image": "./jungle_planks.png"},
         {   "name": "blackWool",
             "image": "./wool_colored_black.png"},
         {   "name": "blueWool",
@@ -53,9 +51,7 @@
         {   "name": "whiteWool",
             "image": "./wool_colored_white.png"},
         {   "name": "yellowWool",
-            "image": "./wool_colored_yellow.png"}
-    ],
-    "misc": [
+            "image": "./wool_colored_yellow.png"},
         {   "name": "dirt",
             "image": "./dirt.png"},
         {   "name": "grass",

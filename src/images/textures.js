@@ -8,36 +8,20 @@ import Textures from './images.json'
 //array of texture names
 export let arrTexture = [];
 
-//set array of textures into a new textureNames array, looping through categories then each entry
-Textures.wood.forEach(t => {
+//set array of textures into a new textureNames array, looping through each entry
+Textures.texture.forEach(t => {
+    //empty texture 'object' to go into the array
     let newTexture = {};
+    //create texture name and set it to the key for the new texture
     let newName = t.name + "Texture"
     newTexture[newName] = new TextureLoader().load(t.image)
+    //remove smearing on new texture
+    newTexture[newName].magFilter = NearestFilter;
 
     arrTexture.push(newTexture)
 });
 
-Textures.wool.forEach(t => {
-    let newTexture = {};
-    let newName = t.name + "Texture"
-    newTexture[newName] = new TextureLoader().load(t.image)
-
-    arrTexture.push(newTexture)
-});
-
-Textures.misc.forEach(t => {
-    let newTexture = {};
-    let newName = t.name + "Texture"
-    newTexture[newName] = new TextureLoader().load(t.image)
-
-    arrTexture.push(newTexture)
-});
-
-
-//remove smearing of all textures
-arrTexture.forEach(texture => {
-    texture.magFilter = NearestFilter
-});
+console.log(arrTexture)
 
 const dirtTexture = new TextureLoader().load(TEXTURE.dirtImg)
 const grassTexture = new TextureLoader().load(TEXTURE.grassImg)

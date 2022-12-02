@@ -13,7 +13,12 @@ function App() {
   return (
     <>
       <Canvas>
-        <Sky sunPosition={[100, 100, 20]} />
+      <Sky
+          distance={450000}
+          sunPosition={[15, 2, 20]}
+          inclination={0}
+          azimuth={0.25}
+        />
         <ambientLight intensity={0.5} />
         <FPV />
         <Physics>
