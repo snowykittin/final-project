@@ -1,3 +1,5 @@
+//convert to json?
+
 //Javascript file to import all images, then export them
 
 import dirtImg from './dirt.png';

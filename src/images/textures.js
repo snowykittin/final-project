@@ -2,7 +2,43 @@ import { NearestFilter, RepeatWrapping, TextureLoader } from 'three'
 //import ALL textures to make life easy 
 import * as TEXTURE from './images'
 
-//Create textures from images imported in
+import Textures from './images.json'
+
+//CONVERSION TO JSON
+//array of texture names
+export let arrTexture = [];
+
+//set array of textures into a new textureNames array, looping through categories then each entry
+Textures.wood.forEach(t => {
+    let newTexture = {};
+    let newName = t.name + "Texture"
+    newTexture[newName] = new TextureLoader().load(t.image)
+
+    arrTexture.push(newTexture)
+});
+
+Textures.wool.forEach(t => {
+    let newTexture = {};
+    let newName = t.name + "Texture"
+    newTexture[newName] = new TextureLoader().load(t.image)
+
+    arrTexture.push(newTexture)
+});
+
+Textures.misc.forEach(t => {
+    let newTexture = {};
+    let newName = t.name + "Texture"
+    newTexture[newName] = new TextureLoader().load(t.image)
+
+    arrTexture.push(newTexture)
+});
+
+
+//remove smearing of all textures
+arrTexture.forEach(texture => {
+    texture.magFilter = NearestFilter
+});
+
 const dirtTexture = new TextureLoader().load(TEXTURE.dirtImg)
 const grassTexture = new TextureLoader().load(TEXTURE.grassImg)
 const glassTexture = new TextureLoader().load(TEXTURE.glassImg)

@@ -53,6 +53,22 @@ body {
   color: white;
 }
 
+.introControls{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.introControls h2{
+  font-size: 16px;
+}
+.introControls p{
+  font-size: 12px;
+  font-style: italic;
+}
+.introControls .menu button{
+  margin-right: 5px;
+}
+
 .help{
   position: absolute;
   top: 5px;
@@ -70,4 +86,21 @@ body {
 .help .keys{
   font-size: 12px;
   text-align: justify;
+}
+
+.selector{
+  height: 120px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgray;
+  border: 5px solid grey;
+}
+.selector img{
+  width: 100px;
+  margin: 5px 10px;
+}
+.selector img.active{
+  border: 3px solid rgb(65, 65, 65);
 }

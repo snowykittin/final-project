@@ -12,7 +12,7 @@ export const Ground = () => {
     const[addCube] = useStore((state) => [state.addCube])
 
     //set size of ground
-    groundTexture.repeat.set(100,100)    
+    groundTexture.repeat.set(100,100)
 
     return (
         <mesh 

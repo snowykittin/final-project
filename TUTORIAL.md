@@ -10,14 +10,12 @@
 - [x] State management
 - [x] Cubes
 - [x] Adding and removing cubes
-- (https://youtu.be/qpOZup_3P_A?t=4170)
-- [] Cube type selector
-- [] Save world in localstorage
-- [] Build a house
+- [x] Cube type selector
+- [x] Save world in localstorage
+- [x] Hover state on cubes
 
 ---
 
-- [/] Toggle controls
-- [] Permanent cube selector
-- [x] Even more cubes
-- [] Fix offset of cursor
+- [x] Toggle controls
+- [ ] Even more cubes
+- [ ] Fix local storage

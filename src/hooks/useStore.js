@@ -1,9 +1,13 @@
 import create from 'zustand'
 import { nanoid } from 'nanoid'
 
+//local storage array helpers
+const getLocalStorage = (key) => JSON.parse(window.localStorage.getItem(key))
+const setLocalStorage = (key, value) => window.localStorage.setItem(key, JSON.stringify(value))
+
 export const useStore = create((set) => ({
     texture:'dirt',
-    cubes: [],
+    cubes: getLocalStorage('cubes') || [],
     //array used for all cubes that exist, set them visible
     addCube: (x,y,z) => {
         set((prev) => ({
@@ -29,9 +33,22 @@ export const useStore = create((set) => ({
         }))
     },
     //used to set the texture that is selected by the player
-    setTexture: () => {},
+    setTexture: (texture) => {
+        //set texture based off of digit pressed
+        set(() => ({
+            texture
+        }))
+    },
     //using localstorage to save a world
-    saveWorld: () => {},
-    //using localstorage to reset the world
-    resetWorld: () => {}
+    saveWorld: () => {
+		set((prev) => {
+			setLocalStorage('cubes', prev.cubes)
+            return prev
+		})
+	},
+	resetWorld: () => {
+		set(() => ({
+			cubes: []
+		}))
+	}
 }))
