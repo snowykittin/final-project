@@ -5,6 +5,7 @@ import * as textures from "../images/textures"
 // import { arrTexture } from "../images/textures"
 
 export const Cube = ({position, texture}) => {
+    //use states for showing whether or not a cube has been hovered
     const [isHovered, setIsHovered] = useState(false)
     const [ref] = useBox(() => ({
         type: 'Static',
@@ -62,6 +63,7 @@ export const Cube = ({position, texture}) => {
             }}
             ref={ref}
         >
+            {/* Create a cube where clicked, and check whether or not a cube is hovered over to potentially darken the texture - also set an opacity for glass */}
             <boxGeometry attach="geometry" />
             <meshStandardMaterial color={isHovered ? 'grey' : 'white'} map={activeTexture} transparent={true} opacity={texture === 'glass' ? '0.8' : 1} attach="material" />
         </mesh>
