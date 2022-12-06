@@ -1,0 +1,32 @@
+{
+    "inputs": [
+        {
+            "action": "Move",
+            "key": "[W], [A], [S], [D]"
+        },
+        {
+            "action": "Jump",
+            "key": "[Space]"
+        },
+        {
+            "action": "Fly",
+            "key": "Hold [Space]"
+        },
+        {
+            "action": "Place Block",
+            "key": "Left Click"
+        },
+        {
+            "action": "Remove Block",
+            "key": "[Shift] + Left Click"
+        },
+        {
+            "action": "Select Block",
+            "key": "[1] → [0]"
+        },
+        {
+            "action": "Select Wool",
+            "key": "[NUM 0] → [NUM 9]"
+        }
+    ]
+}

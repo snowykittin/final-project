@@ -15,7 +15,7 @@ Textures.texture.forEach(t => {
     //create texture name and set it to the key for the new texture
     let newName = t.name + "Texture"
 
-    //this was for driving the entire application off of json. now modified for end use
+    //create a texture based off of the name and image
     newTexture[newName] = new TextureLoader().load(t.image)
     // //remove smearing on new texture
     newTexture[newName].magFilter = NearestFilter;
