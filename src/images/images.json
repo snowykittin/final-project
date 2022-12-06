@@ -1,5 +1,7 @@
 {
     "texture": [
+        {   "name": "dirt",
+            "image": "./dirt.png"},
         {   "name": "oakLog",
             "image": "./oak_log.png"},
         {   "name": "oakPlanks",
@@ -36,8 +38,6 @@
             "image": "./wool_colored_white.png"},
         {   "name": "yellowWool",
             "image": "./wool_colored_yellow.png"},
-        {   "name": "dirt",
-            "image": "./dirt.png"},
         {   "name": "glass",
             "image": "./glass.png"},
         {   "name": "ground",

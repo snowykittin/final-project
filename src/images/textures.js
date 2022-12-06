@@ -14,13 +14,15 @@ Textures.texture.forEach(t => {
     let newTexture = {};
     //create texture name and set it to the key for the new texture
     let newName = t.name + "Texture"
+
+    //this was for driving the entire application off of json. now modified for end use
     newTexture[newName] = new TextureLoader().load(t.image)
-    //remove smearing on new texture
+    // //remove smearing on new texture
     newTexture[newName].magFilter = NearestFilter;
+
 
     arrTexture.push(newTexture)
 });
-
 console.log(arrTexture)
 
 const dirtTexture = new TextureLoader().load(TEXTURE.dirtImg)

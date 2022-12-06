@@ -11,7 +11,8 @@ export const Cube = ({position, texture}) => {
         type: 'Static',
         position
     }))
-    //get the texture for adding/removing blocks
+
+    // get the texture for adding/removing blocks
     const activeTexture = textures[texture + 'Texture']
   
     //grab the const from useStore for removing and adding cubes

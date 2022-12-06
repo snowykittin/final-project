@@ -27,6 +27,7 @@ const images = {
 }
 
 export const TextureSelector = () => {
+
     //determine visibility
     const [visible, setVisible] = useState(false)
     const [activeTexture, setTexture] = useStore((state) => [state.texture, state.setTexture])
